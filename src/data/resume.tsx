@@ -15,7 +15,6 @@ export const DATA = {
     "모바일 게임 클라이언트 프로그래머입니다. " +
     "실서비스 중인 모바일 게임에서 신규 콘텐츠 개발, Firebase 기반 서버 연동, TensorFlow Lite를 활용한 AI 예측 모델 적용 경험을 보유하고 있습니다. " +
     "현재는 2D 사이버펑크 타워 디펜스 개인 프로젝트 **Chrome Frontline**을 개발 중입니다.",
-  avatarUrl: "/me.png",
 
   skills: [
     { name: "Unity", icon: null },
