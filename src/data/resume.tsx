@@ -259,7 +259,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/labyrinthos.png",
+      image: "/Labyrinthos.png",
       video: "",
     },
     {
@@ -306,7 +306,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/dalgona.png",
+      image: "/Dalgona.png",
       video: "",
     },
   ],
