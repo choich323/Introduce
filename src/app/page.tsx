@@ -133,7 +133,7 @@ export default function Page() {
                 게임 개발자가 된 계기, 좋아하는 게임, 취미, 앞으로의 비전을 소개합니다.
               </p>
               <Link
-                href="/about"
+                href="/about-me"
                 className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:underline underline-offset-4 transition-colors w-fit"
               >
                 더 알아보기 →
