@@ -1,701 +1,329 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
-import { ReactLight } from "@/components/ui/svgs/reactLight";
-import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
-import { Typescript } from "@/components/ui/svgs/typescript";
-import { Nodejs } from "@/components/ui/svgs/nodejs";
-import { Python } from "@/components/ui/svgs/python";
-import { Golang } from "@/components/ui/svgs/golang";
-import { Postgresql } from "@/components/ui/svgs/postgresql";
-import { Docker } from "@/components/ui/svgs/docker";
-import { Kubernetes } from "@/components/ui/svgs/kubernetes";
-import { Java } from "@/components/ui/svgs/java";
+import { HomeIcon } from "lucide-react";
 import { Csharp } from "@/components/ui/svgs/csharp";
+import { Python } from "@/components/ui/svgs/python";
 
 export const DATA = {
-  name: "Dillion Verma",
-  initials: "DV",
-  url: "https://dillion.io",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
-  description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+  name: "최종현",
+  initials: "CJH",
+  url: "https://choich323.github.io",
+  description: "Unity Client Programmer",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
-  avatarUrl: "/me.png",
+    "Unity 클라이언트 프로그래머입니다. " +
+    "실서비스 중인 모바일 게임에서 신규 콘텐츠 개발, Firebase 기반 서버 연동, TensorFlow Lite를 활용한 AI 예측 모델 적용 경험을 보유하고 있습니다. " +
+    "현재는 2D 사이버펑크 디펜스 게임 **Chrome Frontline**을 개발 중입니다.",
+
   skills: [
-    { name: "React", icon: ReactLight },
-    { name: "Next.js", icon: NextjsIconDark },
-    { name: "Typescript", icon: Typescript },
-    { name: "Node.js", icon: Nodejs },
+    { name: "Unity", icon: null },
+    { name: "C#", icon: Csharp },
+    { name: "C++", icon: null },
     { name: "Python", icon: Python },
-    { name: "Go", icon: Golang },
-    { name: "Postgres", icon: Postgresql },
-    { name: "Docker", icon: Docker },
-    { name: "Kubernetes", icon: Kubernetes },
-    { name: "Java", icon: Java },
-    { name: "C++", icon: Csharp },
+    { name: "Firebase", icon: null },
+    { name: "DOTween", icon: null },
+    { name: "TensorFlow Lite", icon: null },
+    { name: "Object Pooling", icon: null },
+    { name: "UGUI / TextMeshPro", icon: null },
+    { name: "Git / GitHub", icon: Icons.github },
+    { name: "Jetbrains Rider", icon: null},
+    { name: "Jenkins", icon: null },
+    { name: "Aseprite", icon: null },
+    { name: "MaplestoryWorld", icon: null },
+    { name: "VR / XR", icon: null },
   ],
+
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
+
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    email: "choich323@naver.com",
+    tel: "",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/choich323",
         icon: Icons.github,
         navbar: true,
-      },
-
-      LinkedIn: {
-        name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
-        icon: Icons.linkedin,
-
-        navbar: true,
-      },
-      X: {
-        name: "X",
-        url: "https://dub.sh/dillion-twitter",
-        icon: Icons.x,
-
-        navbar: true,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
-        navbar: true,
-      },
-      email: {
-        name: "Send Email",
-        url: "#",
-        icon: Icons.email,
-
-        navbar: false,
       },
     },
   },
 
   work: [
     {
-      company: "Atomic Finance",
-      href: "https://atomic.finance",
-      badges: [],
-      location: "Remote",
-      title: "Bitcoin Protocol Engineer",
-      logoUrl: "/atomic.png",
-      start: "May 2021",
-      end: "Oct 2022",
+      company: "Dreamo Inc.",
+      href: "https://play.google.com/store/apps/details?id=com.dreamo.woodyblast",
+      badges: ["정규직"],
+      location: "Seoul, Korea",
+      title: "Unity Client Programmer",
+      logoUrl: "/Dreamo_icon.png",
+      start: "2023.09",
+      end: "2025.12 (2년 4개월)",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
-    },
-    {
-      company: "Shopify",
-      badges: [],
-      href: "https://shopify.com",
-      location: "Remote",
-      title: "Software Engineer",
-      logoUrl: "/shopify.svg",
-      start: "January 2021",
-      end: "April 2021",
-      description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
-    },
-    {
-      company: "Nvidia",
-      href: "https://nvidia.com/",
-      badges: [],
-      location: "Santa Clara, CA",
-      title: "Software Engineer",
-      logoUrl: "/nvidia.png",
-      start: "January 2020",
-      end: "April 2020",
-      description:
-        "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
-    },
-    {
-      company: "Splunk",
-      href: "https://splunk.com",
-      badges: [],
-      location: "San Jose, CA",
-      title: "Software Engineer",
-      logoUrl: "/splunk.svg",
-      start: "January 2019",
-      end: "April 2019",
-      description:
-        "Co-developed a prototype iOS app with another intern in Swift for the new Splunk Phantom security orchestration product (later publicly demoed and launched at .conf annual conference in Las Vegas). Implemented a realtime service for the iOS app in Django (Python) and C++; serialized data using protobufs transmitted over gRPC resulting in an approximate 500% increase in data throughput.",
-    },
-    {
-      company: "Lime",
-      href: "https://li.me/",
-      badges: [],
-      location: "San Francisco, CA",
-      title: "Software Engineer",
-      logoUrl: "/lime.svg",
-      start: "January 2018",
-      end: "April 2018",
-      description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
-    },
-    {
-      company: "Mitre Media",
-      href: "https://mitremedia.com/",
-      badges: [],
-      location: "Toronto, ON",
-      title: "Software Engineer",
-      logoUrl: "/mitremedia.png",
-      start: "May 2017",
-      end: "August 2017",
-      description:
-        "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
+        "• 신규 콘텐츠 개발 및 기존 콘텐츠 유지/보수\n" +
+        "• 머지 콘텐츠 Class 설계 및 로직 구현\n" +
+        "• DOTween 기반 게임 연출 구현\n" +
+        "• Firebase Firestore 기반 팀 채팅 시스템 데이터 구조 설계 및 구현\n" +
+        "• TensorFlow Lite를 활용한 AI 난이도 예측 모델 Unity 적용\n" +
+        "• SDK 업데이트 등 플랫폼 이슈 대응\n" +
+        "• Jenkins 빌드 프로세스 트러블슈팅",
     },
   ],
+
   education: [
     {
-      school: "Buildspace",
-      href: "https://buildspace.so",
-      degree: "s3, s4, sf1, s5",
-      logoUrl: "/buildspace.jpg",
-      start: "2023",
-      end: "2024",
-    },
-    {
-      school: "University of Waterloo",
-      href: "https://uwaterloo.ca",
-      degree: "Bachelor's Degree of Computer Science (BCS)",
-      logoUrl: "/waterloo.png",
-      start: "2016",
-      end: "2021",
-    },
-    {
-      school: "Wilfrid Laurier University",
-      href: "https://wlu.ca",
-      degree: "Bachelor's Degree of Business Administration (BBA)",
-      logoUrl: "/laurier.png",
-      start: "2016",
-      end: "2021",
-    },
-    {
-      school: "International Baccalaureate",
-      href: "https://ibo.org",
-      degree: "IB Diploma",
-      logoUrl: "/ib.png",
-      start: "2012",
-      end: "2016",
+      school: "경희대학교",
+      href: "https://www.khu.ac.kr",
+      degree: "일본어학과 · 컴퓨터공학과 전공",
+      logoUrl: "",
+      start: "2015.03",
+      end: "2024.02",
     },
   ],
+
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Chrome Frontline",
+      href: "",
+      dates: "2026.03 - 개발 중",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "2D 모바일 사이버펑크 디펜스 · 개인 프로젝트\n" +
+        "• 계층 구조 기반 아키텍처 설계\n" +
+        "• event 기반 Observer 패턴으로 UI / 게임오브젝트 계층 분리\n" +
+        "• 범용 PoolManager · DataManager 설계\n" +
+        "• Addressables 기반 데이터 접근 빈도별 로드 전략 구현\n" +
+        "• Google Play 스토어 출시 목표",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Unity 6",
+        "C#",
+        "Addressables",
+        "ScriptableObject",
+        "TextMeshPro",
+        "Aseprite",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://chatcollect.com",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
-    },
-    {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          type: "GitHub",
+          href: "https://github.com/choich323/ChromeFrontline",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "YouTube (영상 1)",
+          href: "https://youtu.be/4D54PNUXl7A",
+          icon: <Icons.youtube className="size-3" />,
+        },
+        {
+          type: "YouTube (영상 2)",
+          href: "https://youtu.be/a8paTwmbxXY",
+          icon: <Icons.youtube className="size-3" />,
+        },
+        {
+          type: "APK Download",
+          href: "https://drive.google.com/file/d/1436oqPQYj8HXjuluulEM2Y6uwpH4UZ3_/view?usp=drive_link",
+          icon: <Icons.googleDrive className="size-3" />,
+        },
+        {
+          type: "Notion",
+          href: "https://app.notion.com/p/Chrome-Frontline-30e7c9a624768065a1bcfbbe36419757?source=copy_link",
+          icon: <Icons.notion className="size-3" />,
+        },
+        {
+          type: "Portfolio PDF",
+          href: "https://drive.google.com/file/d/15aYn_FKqh27B_3C9oQ-S2veN0GDPQwmE/view?usp=drive_link",
+          icon: <Icons.googleDrive className="size-3" />,
+        },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "/chrome_frontline.png",
+      video: "",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
+      title: "Merge Blast: Dream Island",
+      href: "",
+      dates: "2023.09 - 2025.12",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "실서비스 모바일 게임의 신규 콘텐츠 개발 담당\n" +
+        "• 머지 콘텐츠 설계 · 구현\n" +
+        "• Firebase 기반 팀 채팅 시스템 설계\n" +
+        "• TensorFlow Lite AI 예측 모델 적용\n" +
+        "• TIPS 사업 실적 자료로 활용\n" +
+        "• SDK 업데이트 등 플랫폼 이슈 해결\n" +
+        "• 계정 삭제 이슈를 Google Cloud Function을 통해 해결\n" +
+        "• 버그  Fix, Tool 개발, UGUI 개발 등 업무 수행\n",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "Unity 2021",
+        "C#",
+        "Firebase",
+        "TensorFlow Lite",
+        "DOTween",
+        "Jenkins",
+        "Google Cloud Function",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://llm.report",
+          type: "Android",
+          href: "https://play.google.com/store/apps/details?id=com.dreamo.woodyblast&pcampaignid=web_share",
           icon: <Icons.globe className="size-3" />,
         },
         {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
+          type: "iOS",
+          href: "https://apps.apple.com/us/app/merge-blast-dream-island/id1668748189",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Portfolio PDF",
+          href: "https://drive.google.com/file/d/17dOZ4jz9suo2jKi1eoZOj3LkKcbeNZei/view?usp=drive_link",
+          icon: <Icons.googleDrive className="size-3" />,
+        },
+      ],
+      image: "/mergeBlast_Icon.png",
+      video: "",
+    },
+    {
+      title: "포로:RE",
+      href: "",
+      dates: "2022.09 - 2022.12",
+      active: true,
+      description:
+        "MapleStory Worlds Hackathon 2022 참가작 · 팀 프로젝트\n" +
+        "• 직접 제작한 외전 스토리와 러닝 액션을 즐길 수 있는 게임\n" +
+        "• 러닝 액션에서의 퀘스트 결과에 따른 멀티 엔딩이 핵심\n" +
+        "• 담당: 팀장 · 컨셉팅 · 스토리 제작 · UI 개발 · 대화 및 퀘스트 개발 · 연출 개발",
+      technologies: [
+        "MapleStory Worlds",
+        "Lua",
+      ],
+      links: [
+        {
+          type: "Play",
+          href: "https://maplestoryworlds.nexon.com/ko/play/38c1fa80a26a43f68d7557504c724391",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "YouTube (Day 3)",
+          href: "https://youtu.be/UG5Fn1jjxE8",
+          icon: <Icons.youtube className="size-3" />,
+        },
+        {
+          type: "YouTube (Bad Ending)",
+          href: "https://youtu.be/lDnTRyxi_dU",
+          icon: <Icons.youtube className="size-3" />,
+        },
+        {
+          type: "YouTube (True Ending)",
+          href: "https://youtu.be/nIALjACHCY0",
+          icon: <Icons.youtube className="size-3" />,
+        },
+        {
+          type: "Portfolio PDF",
+          href: "https://drive.google.com/file/d/1OyXCzJbhXKk5JjUVdsqiuq91bbSw9D2y/view?usp=sharing",
+          icon: <Icons.googleDrive className="size-3" />,
+        },
+      ],
+      image: "/poro_re.png",
+      video: "",
+    },
+    {
+      title: "Labyrinthos",
+      href: "",
+      dates: "2021.10 - 2021.12",
+      active: true,
+      description:
+        "Oculus Quest2 등 VR 플랫폼 타겟 방탈출 게임 · 팀 프로젝트\n" +
+        "• 테세우스의 입장에서 미궁을 탈출하며 현대의 주인공의 과거를 마주하는 내용\n" +
+        "• 실감 미디어(XR) 개발 수업을 수강하며 진행한 팀 프로젝트\n" +
+        "• 담당: 팀장 · 컨셉팅 · 스토리 제작 · 1~2번방 개발 · 이동 및 상호작용 R&D",
+      technologies: [
+        "Unity 2021",
+        "Open XR SDK",
+        "XR Interaction Toolkit",
+        "Cinemachine",
+      ],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/choich323/Labyrinthos",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "YouTube (소개)",
+          href: "https://youtu.be/S4Vs7E_oE00",
+          icon: <Icons.youtube className="size-3" />,
+        },
+        {
+          type: "YouTube (플레이)",
+          href: "https://youtu.be/zkgbqKjCbl0",
+          icon: <Icons.youtube className="size-3" />,
+        },
+        {
+          type: "스크립트 모음",
+          href: "https://drive.google.com/drive/folders/1lfv-SdZ2PLLFMQVVc3UY0NCSDfwJiZus?usp=sharing",
+          icon: <Icons.googleDrive className="size-3" />,
+        },
+        {
+          type: "Portfolio PDF",
+          href: "https://drive.google.com/file/d/1RBkebODi4Ozu9QvsdeCi2Ca7SKcl6CLg/view?usp=sharing",
+          icon: <Icons.googleDrive className="size-3" />,
+        },
       ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      image: "/labyrinthos.png",
+      video: "",
     },
     {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
+      title: "달고나 시뮬레이터",
+      href: "",
+      dates: "2021.11 - 2021.12",
       active: true,
       description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
+        "Leap Motion을 활용한 손 동작 인식 PC 게임 · 개인 프로젝트 (졸업 작품)\n" +
+        "• 키보드/마우스 없이 손의 움직임으로 플레이하는 것이 핵심\n" +
+        "• 드라마 오징어 게임의 달고나 만들기를 게임화\n" +
+        "• 실제 손 동작 인식으로 기존 달고나 게임과 차별화",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "Unity 2021",
+        "Leap Motion SDK",
+        "Azure Kinect DK",
+        "UGUI",
+        "Animator",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
+          type: "GitHub",
+          href: "https://github.com/choich323/DalgonaSimulator",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "YouTube (Stage 1)",
+          href: "https://youtu.be/tvxCLJ57bGQ",
+          icon: <Icons.youtube className="size-3" />,
+        },
+        {
+          type: "YouTube (Stage 2)",
+          href: "https://youtu.be/8OxtL5e1afQ",
+          icon: <Icons.youtube className="size-3" />,
+        },
+        {
+          type: "스크립트 모음",
+          href: "https://drive.google.com/drive/folders/19jQzzLgZBUoHj4hqfYO2sbIjc-Em4wbi?usp=sharing",
+          icon: <Icons.googleDrive className="size-3" />,
+        },
+        {
+          type: "Portfolio PDF",
+          href: "https://drive.google.com/file/d/1oqka3xh3Pbdc7OJ05YR15U9DSPlxCTi8/view?usp=sharing",
+          icon: <Icons.googleDrive className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+      image: "/dalgona.png",
+      video: "",
     },
   ],
-  hackathons: [
-    {
-      title: "Hack Western 5",
-      dates: "November 23rd - 25th, 2018",
-      location: "London, Ontario",
-      description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "Hack The North",
-      dates: "September 14th - 16th, 2018",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a mobile application which delivers university campus wide events in real time to all students.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "FirstNet Public Safety Hackathon",
-      dates: "March 23rd - 24th, 2018",
-      location: "San Francisco, California",
-      description:
-        "Developed a mobile application which communcicates a victims medical data from inside an ambulance to doctors at hospital.",
-      icon: "public",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/firstnet.png",
-      links: [],
-    },
-    {
-      title: "DeveloperWeek Hackathon",
-      dates: "February 3rd - 4th, 2018",
-      location: "San Francisco, California",
-      description:
-        "Developed a web application which aggregates social media data regarding cryptocurrencies and predicts future prices.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/developer-week.jpg",
-      links: [
-        {
-          title: "Github",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/cryptotrends/cryptotrends",
-        },
-      ],
-    },
-    {
-      title: "HackDavis",
-      dates: "January 20th - 21st, 2018",
-      location: "Davis, California",
-      description:
-        "Developed a mobile application which allocates a daily carbon emission allowance to users to move towards a sustainable environment.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-davis.png",
-      win: "Best Data Hack",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg",
-      links: [
-        {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/my6footprint",
-        },
-        {
-          title: "ML",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/my6footprint-machine-learning",
-        },
-        {
-          title: "iOS",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/CarbonWallet",
-        },
-        {
-          title: "Server",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/wallet6-server",
-        },
-      ],
-    },
-    {
-      title: "ETH Waterloo",
-      dates: "October 13th - 15th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a blockchain application for doctors and pharmacists to perform trustless transactions and prevent overdosage in patients.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/eth-waterloo.png",
-      links: [
-        {
-          title: "Organization",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/ethdocnet",
-        },
-      ],
-    },
-    {
-      title: "Hack The North",
-      dates: "September 15th - 17th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a virtual reality application allowing users to see themselves in third person.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Streamer Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/justinmichaud/htn2017",
-        },
-        {
-          title: "Client Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/RTSPClient",
-        },
-      ],
-    },
-    {
-      title: "Hack The 6ix",
-      dates: "August 26th - 27th, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed an open platform for people shipping items to same place to combine shipping costs and save money.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-6ix.jpg",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/ShareShip/ShareShip",
-        },
-        {
-          title: "Site",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://share-ship.herokuapp.com/",
-        },
-      ],
-    },
-    {
-      title: "Stupid Hack Toronto",
-      dates: "July 23rd, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed a chrome extension which tracks which facebook profiles you have visited and immediately texts your girlfriend if you visited another girls page.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/stupid-hackathon.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/nsagirlfriend/nsagirlfriend",
-        },
-      ],
-    },
-    {
-      title: "Global AI Hackathon - Toronto",
-      dates: "June 23rd - 25th, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed a python library which can be imported to any python game and change difficulty of the game based on real time emotion of player. Uses OpenCV and webcam for facial recognition, and a custom Machine Learning Model trained on a [Kaggle Emotion Dataset](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/leaderboard) using [Tensorflow](https://www.tensorflow.org/Tensorflow) and [Keras](https://keras.io/). This project recieved 1st place prize at the Global AI Hackathon - Toronto and was also invited to demo at [NextAI Canada](https://www.nextcanada.com/next-ai).",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/global-ai-hackathon.jpg",
-      win: "1st Place Winner",
-      links: [
-        {
-          title: "Article",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://syncedreview.com/2017/06/26/global-ai-hackathon-in-toronto/",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/TinySamosas/",
-        },
-      ],
-    },
-    {
-      title: "McGill AI for Social Innovation Hackathon",
-      dates: "June 17th - 18th, 2017",
-      location: "Montreal, Quebec",
-      description:
-        "Developed realtime facial microexpression analyzer using AI",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/ai-for-social-good.jpg",
-      links: [],
-    },
-    {
-      title: "Open Source Circular Economy Days Hackathon",
-      dates: "June 10th, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed a custom admin interface for food waste startup <a href='http://genecis.co/'>Genecis</a> to manage their data and provide analytics.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/open-source-circular-economy-days.jpg",
-      win: "1st Place Winner",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/genecis",
-        },
-      ],
-    },
-    {
-      title: "Make School's Student App Competition 2017",
-      dates: "May 19th - 21st, 2017",
-      location: "International",
-      description: "Improved PocketDoc and submitted to online competition",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/make-school-hackathon.png",
-      win: "Top 10 Finalist | Honourable Mention",
-      links: [
-        {
-          title: "Medium Article",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://medium.com/make-school/the-winners-of-make-schools-student-app-competition-2017-a6b0e72f190a",
-        },
-        {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/pocketdoc-react-native",
-        },
-        {
-          title: "YouTube",
-          icon: <Icons.youtube className="h-4 w-4" />,
-          href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/pocketdoc-react-native",
-        },
-      ],
-    },
-    {
-      title: "HackMining",
-      dates: "May 12th - 14th, 2017",
-      location: "Toronto, Ontario",
-      description: "Developed neural network to optimize a mining process",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-mining.png",
-      links: [],
-    },
-    {
-      title: "Waterloo Equithon",
-      dates: "May 5th - 7th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed Pocketdoc, an app in which you take a picture of a physical wound, and the app returns common solutions or cures to the injuries or diseases.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/waterloo-equithon.png",
-      links: [
-        {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/pocketdoc-react-native",
-        },
-        {
-          title: "YouTube",
-          icon: <Icons.youtube className="h-4 w-4" />,
-          href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/pocketdoc-react-native",
-        },
-      ],
-    },
-    {
-      title: "SpaceApps Waterloo",
-      dates: "April 28th - 30th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed Earthwatch, a web application which allows users in a plane to virtually see important points of interest about the world below them. They can even choose to fly away from their route and then fly back if they choose. Special thanks to CesiumJS for providing open source world and plane models.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/space-apps.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/earthwatch",
-        },
-      ],
-    },
-    {
-      title: "MHacks 9",
-      dates: "March 24th - 26th, 2017",
-      location: "Ann Arbor, Michigan",
-      description:
-        "Developed Super Graphic Air Traffic, a VR website made to introduce people to the world of air traffic controlling. This project was built completely using THREE.js as well as a node backend server.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/mhacks-9.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/threejs-planes",
-        },
-      ],
-    },
-    {
-      title: "StartHacks I",
-      dates: "March 4th - 5th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed at StartHacks 2017, Recipic is a mobile app which allows you to take pictures of ingredients around your house, and it will recognize those ingredients using ClarifAI image recognition API and return possible recipes to make. Recipic recieved 1st place at the hackathon for best pitch and hack.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/starthacks.png",
-      win: "1st Place Winner",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source (Mobile)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/mattBlackDesign/recipic-ionic",
-        },
-        {
-          title: "Source (Server)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/mattBlackDesign/recipic-rails",
-        },
-      ],
-    },
-    {
-      title: "QHacks II",
-      dates: "February 3rd - 5th, 2017",
-      location: "Kingston, Ontario",
-      description:
-        "Developed a mobile game which enables city-wide manhunt with random lobbies",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/qhacks.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source (Mobile)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/human-huntr-react-native",
-        },
-        {
-          title: "Source (API)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/mattBlackDesign/human-huntr-rails",
-        },
-      ],
-    },
-    {
-      title: "Terrible Hacks V",
-      dates: "November 26th, 2016",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a mock of Windows 11 with interesting notifications and functionality",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/terrible-hacks-v.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/justinmichaud/TerribleHacks2016-Windows11",
-        },
-      ],
-    },
-    {
-      title: "Portal Hackathon",
-      dates: "October 29, 2016",
-      location: "Kingston, Ontario",
-      description:
-        "Developed an internal widget for uploading assignments using Waterloo's portal app",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/UWPortalSDK/crowmark",
-        },
-      ],
-    },
-  ],
+
+  about: {
+    motivation: "placeholder - 게임 개발자가 된 계기를 작성해주세요.",
+    favoriteGames: "placeholder - 좋아하는 게임을 작성해주세요.",
+    hobbies: "placeholder - 취미를 작성해주세요.",
+    vision: "placeholder - 앞으로의 비전을 작성해주세요.",
+  },
+
+  hackathons: [],
 } as const;
