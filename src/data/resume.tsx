@@ -56,7 +56,7 @@ export const DATA = {
       badges: ["정규직"],
       location: "Seoul, Korea",
       title: "Unity Client Programmer",
-      logoUrl: "",
+      logoUrl: "/Dreamo_icon.png",
       start: "2023.09",
       end: "2025.12 (2년 4개월)",
       description:
