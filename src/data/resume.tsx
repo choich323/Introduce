@@ -7,24 +7,26 @@ export const DATA = {
   name: "최종현",
   initials: "CJH",
   url: "https://choich323.github.io",
+  location: "Seoul, Korea",
+  locationLink: "https://www.google.com/maps/place/seoul",
   description: "Unity Client Programmer",
+  avatarUrl: "/me.png",
   summary:
-    "Unity 클라이언트 프로그래머입니다. " +
+    "모바일 게임 클라이언트 프로그래머입니다. " +
     "실서비스 중인 모바일 게임에서 신규 콘텐츠 개발, Firebase 기반 서버 연동, TensorFlow Lite를 활용한 AI 예측 모델 적용 경험을 보유하고 있습니다. " +
-    "현재는 2D 사이버펑크 디펜스 게임 **Chrome Frontline**을 개발 중입니다.",
+    "현재는 2D 사이버펑크 타워 디펜스 개인 프로젝트 **Chrome Frontline**을 개발 중입니다.",
+  avatarUrl: "/me.png",
 
   skills: [
     { name: "Unity", icon: null },
     { name: "C#", icon: Csharp },
-    { name: "C++", icon: null },
     { name: "Python", icon: Python },
     { name: "Firebase", icon: null },
     { name: "DOTween", icon: null },
     { name: "TensorFlow Lite", icon: null },
     { name: "Object Pooling", icon: null },
     { name: "UGUI / TextMeshPro", icon: null },
-    { name: "Git / GitHub", icon: Icons.github },
-    { name: "Jetbrains Rider", icon: null},
+    { name: "Git / GitHub", icon: null },
     { name: "Jenkins", icon: null },
     { name: "Aseprite", icon: null },
     { name: "MaplestoryWorld", icon: null },
@@ -55,7 +57,7 @@ export const DATA = {
       badges: ["정규직"],
       location: "Seoul, Korea",
       title: "Unity Client Programmer",
-      logoUrl: "/Dreamo_icon.png",
+      logoUrl: "",
       start: "2023.09",
       end: "2025.12 (2년 4개월)",
       description:
@@ -87,8 +89,8 @@ export const DATA = {
       dates: "2026.03 - 개발 중",
       active: true,
       description:
-        "2D 모바일 사이버펑크 디펜스 · 개인 프로젝트\n" +
-        "• 계층 구조 기반 아키텍처 설계\n" +
+        "2D 모바일 사이버펑크 타워 디펜스 개인 프로젝트\n" +
+        "• 계층 구조 기반 아키텍처 설계 (GameField → HeadQuarter → Spawner → Entity)\n" +
         "• event 기반 Observer 패턴으로 UI / 게임오브젝트 계층 분리\n" +
         "• 범용 PoolManager · DataManager 설계\n" +
         "• Addressables 기반 데이터 접근 빈도별 로드 전략 구현\n" +
@@ -120,17 +122,12 @@ export const DATA = {
         {
           type: "APK Download",
           href: "https://drive.google.com/file/d/1436oqPQYj8HXjuluulEM2Y6uwpH4UZ3_/view?usp=drive_link",
-          icon: <Icons.googleDrive className="size-3" />,
-        },
-        {
-          type: "Notion",
-          href: "https://app.notion.com/p/Chrome-Frontline-30e7c9a624768065a1bcfbbe36419757?source=copy_link",
-          icon: <Icons.notion className="size-3" />,
+          icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Portfolio PDF",
           href: "https://drive.google.com/file/d/15aYn_FKqh27B_3C9oQ-S2veN0GDPQwmE/view?usp=drive_link",
-          icon: <Icons.googleDrive className="size-3" />,
+          icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "/chrome_frontline.png",
@@ -145,11 +142,8 @@ export const DATA = {
         "실서비스 모바일 게임의 신규 콘텐츠 개발 담당\n" +
         "• 머지 콘텐츠 설계 · 구현\n" +
         "• Firebase 기반 팀 채팅 시스템 설계\n" +
-        "• TensorFlow Lite AI 예측 모델 적용\n" +
-        "• TIPS 사업 실적 자료로 활용\n" +
-        "• SDK 업데이트 등 플랫폼 이슈 해결\n" +
-        "• 계정 삭제 이슈를 Google Cloud Function을 통해 해결\n" +
-        "• 버그  Fix, Tool 개발, UGUI 개발 등 업무 수행\n",
+        "• TensorFlow Lite AI 예측 모델 적용 (오차율 9%→3%, 모델 크기 132kb→43kb)\n" +
+        "• TIPS 사업 실적 자료로 활용",
       technologies: [
         "Unity 2021",
         "C#",
@@ -173,7 +167,7 @@ export const DATA = {
         {
           type: "Portfolio PDF",
           href: "https://drive.google.com/file/d/17dOZ4jz9suo2jKi1eoZOj3LkKcbeNZei/view?usp=drive_link",
-          icon: <Icons.googleDrive className="size-3" />,
+          icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "/mergeBlast_Icon.png",
@@ -217,7 +211,7 @@ export const DATA = {
         {
           type: "Portfolio PDF",
           href: "https://drive.google.com/file/d/1OyXCzJbhXKk5JjUVdsqiuq91bbSw9D2y/view?usp=sharing",
-          icon: <Icons.googleDrive className="size-3" />,
+          icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "/poro_re.png",
@@ -258,12 +252,12 @@ export const DATA = {
         {
           type: "스크립트 모음",
           href: "https://drive.google.com/drive/folders/1lfv-SdZ2PLLFMQVVc3UY0NCSDfwJiZus?usp=sharing",
-          icon: <Icons.googleDrive className="size-3" />,
+          icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Portfolio PDF",
           href: "https://drive.google.com/file/d/1RBkebODi4Ozu9QvsdeCi2Ca7SKcl6CLg/view?usp=sharing",
-          icon: <Icons.googleDrive className="size-3" />,
+          icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "/labyrinthos.png",
@@ -305,12 +299,12 @@ export const DATA = {
         {
           type: "스크립트 모음",
           href: "https://drive.google.com/drive/folders/19jQzzLgZBUoHj4hqfYO2sbIjc-Em4wbi?usp=sharing",
-          icon: <Icons.googleDrive className="size-3" />,
+          icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Portfolio PDF",
           href: "https://drive.google.com/file/d/1oqka3xh3Pbdc7OJ05YR15U9DSPlxCTi8/view?usp=sharing",
-          icon: <Icons.googleDrive className="size-3" />,
+          icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "/dalgona.png",
