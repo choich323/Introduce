@@ -6,7 +6,7 @@ import { Python } from "@/components/ui/svgs/python";
 export const DATA = {
   name: "최종현",
   initials: "CJH",
-  url: "https://choich323.github.io",
+  url: "https://introduce-k3wm.vercel.app/",
   location: "Seoul, Korea",
   locationLink: "https://www.google.com/maps/place/seoul",
   description: "Unity Client Programmer",
@@ -14,7 +14,7 @@ export const DATA = {
   summary:
     "모바일 게임 클라이언트 프로그래머입니다. " +
     "실서비스 중인 모바일 게임에서 신규 콘텐츠 개발, Firebase 기반 서버 연동, TensorFlow Lite를 활용한 AI 예측 모델 적용 경험을 보유하고 있습니다. " +
-    "현재는 2D 사이버펑크 타워 디펜스 개인 프로젝트 **Chrome Frontline**을 개발 중입니다.",
+    "현재는 2D 사이버펑크 디펜스 게임 **Chrome Frontline**을 개발 중입니다.",
 
   skills: [
     { name: "Unity", icon: null },
@@ -88,7 +88,7 @@ export const DATA = {
       dates: "2026.03 - 개발 중",
       active: true,
       description:
-        "2D 모바일 사이버펑크 타워 디펜스 개인 프로젝트\n" +
+        "2D 모바일 사이버펑크 디펜스\n" +
         "• 계층 구조 기반 아키텍처 설계\n" +
         "• event 기반 Observer 패턴으로 UI / 게임오브젝트 계층 분리\n" +
         "• 범용 PoolManager · DataManager 설계\n" +
@@ -121,12 +121,17 @@ export const DATA = {
         {
           type: "APK Download",
           href: "https://drive.google.com/file/d/1436oqPQYj8HXjuluulEM2Y6uwpH4UZ3_/view?usp=drive_link",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.googleDrive className="size-3" />,
+        },
+        {
+          type: "Notion",
+          href: "https://app.notion.com/p/Chrome-Frontline-30e7c9a624768065a1bcfbbe36419757?source=copy_link",
+          icon: <Icons.notion className="size-3" />,
         },
         {
           type: "Portfolio PDF",
           href: "https://drive.google.com/file/d/15aYn_FKqh27B_3C9oQ-S2veN0GDPQwmE/view?usp=drive_link",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.googleDrive className="size-3" />,
         },
       ],
       image: "/chrome_frontline.png",
@@ -166,7 +171,7 @@ export const DATA = {
         {
           type: "Portfolio PDF",
           href: "https://drive.google.com/file/d/17dOZ4jz9suo2jKi1eoZOj3LkKcbeNZei/view?usp=drive_link",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.googleDrive className="size-3" />,
         },
       ],
       image: "/mergeBlast_Icon.png",
@@ -193,7 +198,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
         {
-          type: "YouTube (Day 3)",
+          type: "YouTube",
           href: "https://youtu.be/UG5Fn1jjxE8",
           icon: <Icons.youtube className="size-3" />,
         },
@@ -210,7 +215,7 @@ export const DATA = {
         {
           type: "Portfolio PDF",
           href: "https://drive.google.com/file/d/1OyXCzJbhXKk5JjUVdsqiuq91bbSw9D2y/view?usp=sharing",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.googleDrive className="size-3" />,
         },
       ],
       image: "/poro_re.png",
@@ -251,12 +256,12 @@ export const DATA = {
         {
           type: "스크립트 모음",
           href: "https://drive.google.com/drive/folders/1lfv-SdZ2PLLFMQVVc3UY0NCSDfwJiZus?usp=sharing",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.googleDrive className="size-3" />,
         },
         {
           type: "Portfolio PDF",
           href: "https://drive.google.com/file/d/1RBkebODi4Ozu9QvsdeCi2Ca7SKcl6CLg/view?usp=sharing",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.googleDrive className="size-3" />,
         },
       ],
       image: "/Labyrinthos.png",
@@ -298,12 +303,12 @@ export const DATA = {
         {
           type: "스크립트 모음",
           href: "https://drive.google.com/drive/folders/19jQzzLgZBUoHj4hqfYO2sbIjc-Em4wbi?usp=sharing",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.googleDrive className="size-3" />,
         },
         {
           type: "Portfolio PDF",
           href: "https://drive.google.com/file/d/1oqka3xh3Pbdc7OJ05YR15U9DSPlxCTi8/view?usp=sharing",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.googleDrive className="size-3" />,
         },
       ],
       image: "/Dalgona.png",
