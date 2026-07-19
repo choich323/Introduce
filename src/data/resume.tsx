@@ -89,7 +89,7 @@ export const DATA = {
       active: true,
       description:
         "2D 모바일 사이버펑크 타워 디펜스 개인 프로젝트\n" +
-        "• 계층 구조 기반 아키텍처 설계 (GameField → HeadQuarter → Spawner → Entity)\n" +
+        "• 계층 구조 기반 아키텍처 설계\n" +
         "• event 기반 Observer 패턴으로 UI / 게임오브젝트 계층 분리\n" +
         "• 범용 PoolManager · DataManager 설계\n" +
         "• Addressables 기반 데이터 접근 빈도별 로드 전략 구현\n" +
@@ -141,7 +141,7 @@ export const DATA = {
         "실서비스 모바일 게임의 신규 콘텐츠 개발 담당\n" +
         "• 머지 콘텐츠 설계 · 구현\n" +
         "• Firebase 기반 팀 채팅 시스템 설계\n" +
-        "• TensorFlow Lite AI 예측 모델 적용 (오차율 9%→3%, 모델 크기 132kb→43kb)\n" +
+        "• TensorFlow Lite AI 예측 모델 적용\n" +
         "• TIPS 사업 실적 자료로 활용",
       technologies: [
         "Unity 2021",
@@ -311,12 +311,11 @@ export const DATA = {
     },
   ],
 
-  about: {
+  aboutMe: {
     motivation: "placeholder - 게임 개발자가 된 계기를 작성해주세요.",
     favoriteGames: "placeholder - 좋아하는 게임을 작성해주세요.",
     hobbies: "placeholder - 취미를 작성해주세요.",
     vision: "placeholder - 앞으로의 비전을 작성해주세요.",
   },
 
-  hackathons: [],
 } as const;
