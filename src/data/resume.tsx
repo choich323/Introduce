@@ -109,6 +109,11 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
         {
+          type: "핵심 스크립트 요약",
+          href: "https://drive.google.com/drive/folders/1TbuUH5rcYFqea_O8--arNRnOA4nqLvRS?usp=sharing",
+          icon: <Icons.googleDrive className="size-3" />,
+        },
+        {
           type: "YouTube",
           href: "https://youtu.be/2Z5qx1UvySE",
           icon: <Icons.youtube className="size-3" />,
