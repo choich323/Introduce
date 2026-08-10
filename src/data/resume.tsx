@@ -109,13 +109,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
         {
-          type: "YouTube (영상 1)",
-          href: "https://youtu.be/4D54PNUXl7A",
-          icon: <Icons.youtube className="size-3" />,
-        },
-        {
-          type: "YouTube (영상 2)",
-          href: "https://youtu.be/a8paTwmbxXY",
+          type: "YouTube",
+          href: "https://youtu.be/2Z5qx1UvySE",
           icon: <Icons.youtube className="size-3" />,
         },
         {
