@@ -106,7 +106,7 @@ export const DATA = {
         {
           type: "GamePlay(WebGL Build)",
           href: "https://choich.itch.io/chromefrontline",
-          icon: "/itch_icon.png"
+          icon: <Icons.globe className="size-3" />,
         },
         {
           type: "GitHub",
@@ -166,12 +166,12 @@ export const DATA = {
         {
           type: "Android",
           href: "https://play.google.com/store/apps/details?id=com.dreamo.woodyblast&pcampaignid=web_share",
-          icon: "/playstore_icon.png",
+          icon: <Icons.globe className="size-3" />,
         },
         {
           type: "iOS",
           href: "https://apps.apple.com/us/app/merge-blast-dream-island/id1668748189",
-          icon: "/appstore_icon.png",
+          icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Portfolio PDF",
