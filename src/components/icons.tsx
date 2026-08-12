@@ -226,4 +226,33 @@ export const Icons = {
       />
     </svg>
   ),
+  // ── 이미지 파일 기반 아이콘 ──
+  // public 폴더에 있는 png/svg 파일을 렌더링. 파일을 public/에 넣고 경로만 맞추면 됨.
+  itch: (props: IconProps) => (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src="/itch_icon.png"
+      alt="itch.io"
+      className={props.className}
+      style={{ display: "inline-block" }}
+    />
+  ),
+  appStore: (props: IconProps) => (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src="/appstore_icon.png"
+      alt="App Store"
+      className={props.className}
+      style={{ display: "inline-block" }}
+    />
+  ),
+  playStore: (props: IconProps) => (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src="/playstore_icon.png"
+      alt="Google Play"
+      className={props.className}
+      style={{ display: "inline-block" }}
+    />
+  ),
 };
