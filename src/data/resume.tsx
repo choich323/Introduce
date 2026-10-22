@@ -120,7 +120,7 @@ export const DATA = {
         },
         {
           type: "YouTube",
-          href: "https://youtu.be/2Z5qx1UvySE",
+          href: "https://youtu.be/PSGD30L71G0",
           icon: <Icons.youtube className="size-3" />,
         },
         {
